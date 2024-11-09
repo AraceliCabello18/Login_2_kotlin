@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/b2"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Actualizar"
+            android:textSize="40dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="25dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="llena el formulario por favor"
+            android:textSize="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="25dp" />
+
+        <EditText
+            android:id="@+id/Nombres"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Nombre"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="20dp"
+            android:inputType="textPersonName"
+            android:textSize="25dp" />
+        <EditText
+            android:id="@+id/apPaterno"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Apellido Paterno"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="20dp"
+            android:inputType="textPersonName"
+            android:textSize="25dp" />
+        <EditText
+            android:id="@+id/apMaterno"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Apellido Materno"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="10dp"
+            android:inputType="textPersonName"
+            android:textSize="25dp" />
+        <EditText
+            android:id="@+id/Edad"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Edad"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="10dp"
+            android:inputType="text"
+            android:textSize="25dp" />
+
+        <RadioGroup
+            android:id="@+id/radioGenero"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:layout_constraintEnd_toEndOf="parent"
+            android:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottonOf="@id/Edad">
+
+            <RadioButton
+                android:id="@+id/radioMaculino"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Masculino"/>
+            <RadioButton
+                android:id="@+id/radioFemenino"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Femenino"/>
+            <RadioButton
+                android:id="@+id/radioOtro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Otros"/>
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/Correo"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Correo eletronico"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="10dp"
+            android:inputType="textEmailAddress"
+            android:textSize="25dp" />
+        <EditText
+            android:id="@+id/Contrasena"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Contraseña"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="10dp"
+            android:inputType="textPassword"
+            android:textSize="25dp" />
+        <Button
+            android:id="@+id/FechaNacimiento"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Fecha de Nacimiento"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="10dp"
+            android:inputType="text"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/button_Registrar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:backgroundTint="@color/cardview_shadow_start_color"
+            android:text="Registrarse" />
+        <Button
+            android:id="@+id/button_cancelar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:backgroundTint="@color/cardview_shadow_start_color"
+            android:text="Cancelar" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
